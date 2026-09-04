@@ -3,11 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".css">
-    <title>Vr Musica</title>
+    <link rel="stylesheet" href="style.css">
+    <title>VR Música - Canal Funk</title>
 </head>
 <body>
-    <h1>VR Músicas</h1>
-    <iframe width="1337" height="752" src="https://www.youtube.com/embed/zbOx_PKRl7Y" title="FNF: Fire In The Hole [Remastered] – Todas as semanas completas, cutscenes e mais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Menu de Navegação -->
+    <nav class="menu">
+        <a href="#video1">🎵 FNF Fire</a>
+        <a href="#video2">🎶 Funk Hits</a>
+        <a href="#video3">🔥 Remix</a>
+        <a href="#artistas">🎤 Artistas</a>
+        <a href="#player">🎧 Player</a>
+    </nav>
+
+    <!-- Título Principal -->
+    <h1>🎵 VR Músicas 🎵</h1>
+    
+    <!-- VÍDEO 1 - COR VERMELHA -->
+    <section id="video1" class="video-section cor-vermelha">
+        <h2>🎤 Fire In The Hole</h2>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/zbOx_PKRl7Y" title="FNF: Fire In The Hole" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="interacoes">
+            <span class="views">👁️ 2.4M visualizações</span>
+            <div class="botoes">
+                <button class="curtir">👍 1.2K</button>
+                <button class="comentar">💬 345</button>
+                <button class="compartilhar">🔗 Compartilhar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- VÍDEO 2 - COR AZUL -->
+    <section id="video2" class="video-section cor-azul">
+        <h2>🎧 Funk Hits 2025</h2>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/7oRM6Zln4WA" title="Funk Hits" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="interacoes">
+            <span class="views">👁️ 5.8M visualizações</span>
+            <div class="botoes">
+                <button class="curtir">👍 3.4K</button>
+                <button class="comentar">💬 892</button>
+                <button class="compartilhar">🔗 Compartilhar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- VÍDEO 3 - COR ROXA -->
+    <section id="video3" class="video-section cor-roxa">
+        <h2>🔥 Remix Explosivo</h2>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/y6120QOlsfU" title="Funk Remix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="interacoes">
+            <span class="views">👁️ 9.1M visualizações</span>
+            <div class="botoes">
+                <button class="curtir">👍 5.7K</button>
+                <button class="comentar">💬 1.2K</button>
+                <button class="compartilhar">🔗 Compartilhar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PLAYER DE ÁUDIO ESTILOSO ===== -->
+    <section id="player" class="player-section">
+        <h2>🎧 Player VR Músicas</h2>
+        <div class="player-container">
+            <div class="player-info">
+                <div class="musica-atual">
+                    <span class="icone-musica">🎵</span>
+                    <div>
+                        <p class="nome-musica">Funk Explosivo</p>
+                        <p class="nome-artista">DJ Luan</p>
+                    </div>
+                </div>
+                <div class="controles">
+                    <button class="botao-player">⏮️</button>
+                    <button class="botao-player principal">▶️</button>
+                    <button class="botao-player">⏭️</button>
+                </div>
+                <div class="tempo">
+                    <span>1:23</span>
+                    <div class="barra-tempo">
+                        <div class="progresso" style="width: 30%;"></div>
+                    </div>
+                    <span>3:45</span>
+                </div>
+            </div>
+            <!-- Player de áudio real (substitua o src pelo seu arquivo de música) -->
+            <audio controls>
+                <source src="sua-musica.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio. Baixe o arquivo MP3.
+            </audio>
+            <p class="dica-audio">🎵 Coloque o arquivo de música (MP3) na mesma pasta e mude o nome em "src"</p>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO DE ARTISTAS ===== -->
+    <section id="artistas" class="artistas-section">
+        <h2>🎤 Nossos Artistas</h2>
+        <div class="grade-artistas">
+            <!-- Artista 1 -->
+            <div class="card-artista">
+                <div class="foto-artista" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
+                    🧑‍🎤
+                </div>
+                <h3>DJ Luan</h3>
+                <p class="genero">🔥 Funk / Eletrônico</p>
+                <p class="descricao">O criador do groove! Especialista em remixes explosivos.</p>
+                <div class="redes-sociais">
+                    <span>📱</span>
+                    <span>🎵</span>
+                    <span>📸</span>
+                </div>
+            </div>
+
+            <!-- Artista 2 -->
+            <div class="card-artista">
+                <div class="foto-artista" style="background: linear-gradient(135deg, #4ecdc4, #0abde3);">
+                    🎤
+                </div>
+                <h3>MC Carol</h3>
+                <p class="genero">🎶 Funk / Pop</p>
+                <p class="descricao">Voz poderosa e presença de palco. Arrassa nos hits!</p>
+                <div class="redes-sociais">
+                    <span>📱</span>
+                    <span>🎵</span>
+                    <span>📸</span>
+                </div>
+            </div>
+
+            <!-- Artista 3 -->
+            <div class="card-artista">
+                <div class="foto-artista" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">
+                    🎧
+                </div>
+                <h3>DJ Nando</h3>
+                <p class="genero">🔥 Trap / Funk</p>
+                <p class="descricao">Mestre das batidas pesadas e mixes insanos.</p>
+                <div class="redes-sociais">
+                    <span>📱</span>
+                    <span>🎵</span>
+                    <span>📸</span>
+                </div>
+            </div>
+
+            <!-- Artista 4 -->
+            <div class="card-artista">
+                <div class="foto-artista" style="background: linear-gradient(135deg, #fd79a8, #e17055);">
+                    💃
+                </div>
+                <h3>MC Bia</h3>
+                <p class="genero">🎤 Funk / Soul</p>
+                <p class="descricao">Flow único e letras que mexem com o coração.</p>
+                <div class="redes-sociais">
+                    <span>📱</span>
+                    <span>🎵</span>
+                    <span>📸</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>🎶 VR Músicas - O som que você curte! 🎶</p>
+        <p style="font-size: 14px; opacity: 0.7;">© 2025 - Feito com ❤️ por Luan</p>
+    </footer>
 </body>
 </html>
